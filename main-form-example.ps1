@@ -1,6 +1,7 @@
 # Init Powershell Gui
 Add-Type -AssemblyName System.Windows.Forms
 
+
 # Create new form
 $localform = New-Object System.Windows.Forms.Form
 
@@ -24,7 +25,25 @@ $title.location = New-Object System.Drawing.Point(20,20)
 # Define the font type and size
 $title.Font = 'Microsoft Sans Serif,13'
 
+# Add a Button Object
+$SearchUsers                   = New-Object system.Windows.Forms.Button
+$SearchUsers.BackColor         = "#a4ba67"
+$SearchUsers.text              = "Search Users"
+$SearchUsers.width             = 150
+$SearchUsers.height            = 30
+$SearchUsers.location          = New-Object System.Drawing.Point(340,250)
+$SearchUsers.Font              = 'Microsoft Sans Serif,10'
+$SearchUsers.ForeColor         = "#ffffff"
+
+$SearchUsers.Add_Click({searchuser})
+function searchuser {
+    
+}
+
+
+
 # Add the elements to the form
-$localform.controls.AddRange(@($title))
+$localform.controls.AddRange(@($title,$SearchUsers))
 
 [void]$localform.ShowDialog()
+
