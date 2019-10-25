@@ -6,7 +6,7 @@ Add-Type -AssemblyName System.Windows.Forms
 $localform = New-Object System.Windows.Forms.Form
 
 # Define the size, title and backgorund color
-$localform.ClientSize = '500,300'
+$localform.ClientSize = '600,600'
 $localform.text = "Yusuf TEZCAN - Powershell GUI"
 $localform.backcolor = "#ffffff"
 
@@ -31,7 +31,7 @@ $SearchUsers.BackColor         = "#a4ba67"
 $SearchUsers.text              = "Search"
 $SearchUsers.width             = 150
 $SearchUsers.height            = 30
-$SearchUsers.location          = New-Object System.Drawing.Point(340,250)
+$SearchUsers.location          = New-Object System.Drawing.Point(340,550)
 $SearchUsers.Font              = 'Microsoft Sans Serif,10'
 $SearchUsers.ForeColor         = "#ffffff"
 
@@ -41,7 +41,7 @@ $cancelBtn.BackColor             = "#ffffff"
 $cancelBtn.text                  = "Cancel"
 $cancelBtn.width                 = 90
 $cancelBtn.height                = 30
-$cancelBtn.location              = New-Object System.Drawing.Point(210,250)
+$cancelBtn.location              = New-Object System.Drawing.Point(210,550)
 $cancelBtn.Font                  = 'Microsoft Sans Serif,10'
 $cancelBtn.ForeColor             = "#000"
 $cancelBtn.DialogResult          = [System.Windows.Forms.DialogResult]::Cancel
